@@ -1,6 +1,20 @@
 {
   "name": "keen-slider-svelte",
+  "description": "Svelte touch slider carousel with the most native feeling you will get.",
   "version": "0.1.0",
+  "keywords": [
+    "slider",
+    "svelte",
+    "carousel",
+    "caroussel",
+    "javascript",
+    "typescript",
+    "webcomponents",
+    "gallery",
+    "plugin"
+  ],
+  "author": "Denis Penkov",
+  "license": "MIT",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
