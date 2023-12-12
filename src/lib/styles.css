@@ -1,0 +1,123 @@
+.keen-slider__container {
+	position: relative;
+}
+
+.keen-slider__slides-wrapper {
+	display: flex;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.keen-slider__dots {
+	display: flex;
+	justify-content: center;
+}
+
+.keen-slider__dot {
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	width: 30px;
+	height: 30px;
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+	display: flex;
+	align-items: center;
+}
+
+.keen-slider__dot::after {
+	background-color: #efefef;
+	transition: background-color 0.2s linear;
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	content: '';
+}
+
+.keen-slider__dot.is-selected::after {
+	background-color: blue;
+}
+
+.keen-slider__dot:hover::after {
+	background-color: black;
+}
+
+.keen-slider__prev,
+.keen-slider__next {
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	border: 0;
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 1;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.keen-slider__prev:hover .keen-slider__prev-icon,
+.keen-slider__next:hover .keen-slider__next-icon {
+	transform: scale(1.1);
+}
+
+.keen-slider__prev-icon,
+.keen-slider__next-icon {
+	outline: none;
+	transform-origin: center;
+	transition: transform 0.3s linear;
+	padding: 4px;
+	width: 26px;
+	height: 26px;
+}
+
+.keen-slider__prev:disabled .keen-slider__prev-icon,
+.keen-slider__next:disabled .keen-slider__next-icon {
+	opacity: 0.6;
+}
+
+.keen-slider__prev {
+	left: 5px;
+}
+
+.keen-slider__next {
+	left: auto;
+	right: 5px;
+}
+
+.keen-slider__prev-sr-text,
+.keen-slider__next-sr-text {
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.thumbnail .keen-slider__slide {
+	font-size: 30px;
+	margin-top: 10px;
+	height: 100px;
+}
+.thumbnail .keen-slider__slide {
+	cursor: pointer;
+}
+.thumbnail .keen-slider__slide.active {
+	border: 1px dashed black;
+}
