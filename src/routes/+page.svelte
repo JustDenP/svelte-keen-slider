@@ -61,7 +61,7 @@
 			instance={thumbnails}
 			id={thumbnailsId}
 			classes={{
-				keen: 'keen-slider thumbnail'
+				slider: 'keen-slider thumbnail'
 			}}
 		>
 			<div style="height: 200px;" class="keen-slider__slide number-slide1">1</div>
@@ -102,7 +102,7 @@
 			arrows: true,
 			slides: { perView: 1, spacing: 15 }
 		}}
-		autoplayTimeoutMs={3000}
+		autoplayTimeoutMs="{3000},"
 		plugins={[AutoplayPlugin, WheelControlsPlugin, AdaptiveHeightPlugin]}
 	>
 		<svg

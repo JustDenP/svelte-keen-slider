@@ -15,6 +15,10 @@
   ],
   "author": "Denis Penkov",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JustDenP/svelte-keen-slider"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
